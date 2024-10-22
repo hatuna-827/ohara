@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>おはらん教</title>
+	</head>
+	<style type="text/css">
+		::selection {
+			background-color: #a2d5ff;
+			color: #000000;
+		}
+		body {
+			margin: 0px;
+			font-family: '游明朝','Yu Mincho','YuMincho','Hiragino Mincho Pro',serif;
+			font-size: 0px;
+			background-color: #fff;
+		}
+        h1 {
+            margin: 30px 0px;
+            line-height: 50px;
+            color: #000000;
+            font-size: 45px;
+            text-align: left;
+        }
+        h2 {
+            margin: 30px;
+            line-height: 40px;
+            color: #000000;
+            font-size: 30px;
+            text-align: left;
+        }
+        p {
+            margin: 0px 30px;
+            line-height: 50px;
+            color: #000000;
+            font-size: 20px;
+            text-align: left;
+        }
+        ul {
+            margin: 10px 30px;
+            line-height: 30px;
+            color: #000000;
+            font-size: 20px;
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .left {
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        #main {
+            margin: 50px;
+        }
+        #png {
+            width: 20vw;
+            cursor: pointer;
+        }
+        #serihu {
+            text-align: left;
+            margin: -300px 0px 0px 15px;
+            font-size: 30px;
+            display: flex;
+            position: relative;
+            max-width: 60vw;
+            height: 200px;
+            padding: .8em 1.2em;
+            background-color: #cbd9e7;
+            color: #000000;
+            border-radius: 10px;
+        }
+        #serihu::before {
+            margin: 150px 0px 0px 0px;
+            position: absolute;
+            right: -50px;
+            width: 50px;
+            height: 50px;
+            background-color: #cbd9e7;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            content: '';
+        }
+	</style>
+	<body>
+		<div style="background-color: #6fbeff; width: 100%; height: min(90px,15vw); text-align: left;"><div style="margin-left: 50px;"><a style="font-size: min(50px,10vw); color: #000000; text-decoration: none;" href="https://hatuna-827.github.io/ohara/">おはらん教</a></div></div>
+		<div style="text-align: right; padding: min(30px,6vw) 50px 0px 0px; margin: max(-90px,-15vw) 0px 0px 0px; height: min(60px,9vw); vertical-align: middle;"><a style="font-size: min(30px,6vw); color: #000000; text-decoration: none; text-align: right; " href="https://hatuna-827.github.io/ohara/topic/">TOPIC</a></div>
+		<div id="main">
+        <h1>おはらん教へようこそ！</h1>
+        <div class="right"><img src="ohara.png" id="png" onclick="serihu()"></div>
+        <div id="serihu">
+            click me!
+        </div>
+        </div>
+        <script>
+            function serihu(){
+                a+=1
+            }
+        </script>
+    </body>
+</html>
