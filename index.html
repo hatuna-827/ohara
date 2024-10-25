@@ -23,65 +23,44 @@
             font-size: 45px;
             text-align: left;
         }
-        h2 {
-            margin: 30px;
-            line-height: 40px;
-            color: #000000;
-            font-size: 30px;
-            text-align: left;
-        }
-        p {
-            margin: 0px 30px;
-            line-height: 50px;
-            color: #000000;
-            font-size: 20px;
-            text-align: left;
-        }
-        ul {
-            margin: 10px 30px;
-            line-height: 30px;
-            color: #000000;
-            font-size: 20px;
-            text-align: left;
-        }
         .right {
             text-align: right;
-        }
-        .left {
-            text-align: left;
-        }
-        .center {
-            text-align: center;
         }
         #main {
             margin: 50px;
         }
         #png {
-            width: 20vw;
+            height: 170px;
+            margin: -170px 0px 0px 0px;
             cursor: pointer;
         }
         #serihu {
-            text-align: left;
-            margin: -300px 0px 0px 15px;
-            font-size: 30px;
-            display: flex;
-            position: relative;
-            max-width: 60vw;
-            height: 200px;
-            padding: .8em 1.2em;
+            text-align: center;
+            margin: 50px 0px 0px 0px;
+            font-size: min(30px,3vw);
+            white-space: nowrap;
+            line-height: 170px;
+            width: calc(100% - 150px - 1vw);
+            height: 170px;
             background-color: #cbd9e7;
             color: #000000;
             border-radius: 10px;
         }
         #serihu::before {
-            margin: 150px 0px 0px 0px;
+            margin: 60px 0px 0px 0px;
             position: absolute;
-            right: -50px;
+            right: 180px;
             width: 50px;
             height: 50px;
             background-color: #cbd9e7;
             clip-path: polygon(0 0, 100% 50%, 0 100%);
             content: '';
+        }
+        #tyu {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 20px;
         }
 	</style>
 	<body>
@@ -89,14 +68,26 @@
 		<div style="text-align: right; padding: min(30px,6vw) 50px 0px 0px; margin: max(-90px,-15vw) 0px 0px 0px; height: min(60px,9vw); vertical-align: middle;"><a style="font-size: min(30px,6vw); color: #000000; text-decoration: none; text-align: right; " href="https://hatuna-827.github.io/ohara/topic/">TOPIC</a></div>
 		<div id="main">
         <h1>おはらん教へようこそ！</h1>
+        <div id="serihu"></div>
         <div class="right"><img src="ohara.png" id="png" onclick="serihu()"></div>
-        <div id="serihu">
-            click me!
-        </div>
+        <p id="tyu">※この宗教は決して危ないものではございません。</p>
         </div>
         <script>
+            let a=0
+            serihu()
             function serihu(){
+                if (a==0) document.getElementById('serihu').textContent='click me!'
+                if (a==1) document.getElementById('serihu').textContent='嫌なことをただ堪えるのが我慢、'
+                if (a==2) document.getElementById('serihu').textContent='好きなことのために堪えるのが辛抱。'
+                if (a==3) document.getElementById('serihu').textContent='我慢には不満があり、'
+                if (a==4) document.getElementById('serihu').textContent='辛抱には希望がある。'
+                if (a==5) document.getElementById('serihu').textContent='我慢はいずれ爆発し、'
+                if (a==6) document.getElementById('serihu').textContent='辛抱はいずれ実る。'
+                if (a==7) document.getElementById('serihu').textContent='我慢しなくてよい。'
+                if (a==8) document.getElementById('serihu').textContent='辛抱しよう！'
+                if (a==9) document.getElementById('serihu').textContent=''
                 a+=1
+                if (a>9) a=1
             }
         </script>
     </body>
