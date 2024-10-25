@@ -1,0 +1,45 @@
+::selection {
+    background-color: #a2d5ff;
+    color: #000000;
+}
+body {
+    margin: 0px;
+    font-family: '游明朝','Yu Mincho','YuMincho','Hiragino Mincho Pro',serif;
+    font-size: 0px;
+    background-color: #fff;
+}
+h1 {
+    margin: 30px 0px;
+    line-height: 50px;
+    color: #000000;
+    font-size: 45px;
+    text-align: left;
+}
+h2 {
+    margin: 30px;
+    line-height: 40px;
+    color: #000000;
+    font-size: 30px;
+    text-align: left;
+}
+p {
+    margin: 0px 30px;
+    line-height: 50px;
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+}
+ul {
+    margin: 10px 30px;
+    line-height: 40px;
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+}
+#main {
+    margin: 50px;
+}
+.tyu {
+    font-size: 12px;
+    line-height: 15px;
+}
